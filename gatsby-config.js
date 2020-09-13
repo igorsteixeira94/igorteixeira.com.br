@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `My blog`,
-    position:`JavaScript Developer`,
+    position: `JavaScript Developer`,
     description: `A blog about omnistack development and other cool stuff.`,
     author: `Igor R.S. Teixeira`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,4 +33,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
