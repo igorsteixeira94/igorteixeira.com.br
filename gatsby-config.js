@@ -7,7 +7,7 @@ module.exports = {
     position: `JavaScript Developer`,
     description: `A blog about omnistack development and other cool stuff.`,
     author: `Igor R.S. Teixeira`,
-    siteUrl: `https://igorteixeira.com.br`,
+    siteUrl: `https://igorsteixeira94.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
