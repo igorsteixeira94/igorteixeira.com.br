@@ -109,6 +109,9 @@ export const MainContent = styled.section`
     max-width: 100%;
     margin: 1.875rem auto;
   }
+  .classImg {
+    max-width: 500px;
+  }
   iframe {
     padding: 0 1.6rem 1.6rem;
     width: 100%;
