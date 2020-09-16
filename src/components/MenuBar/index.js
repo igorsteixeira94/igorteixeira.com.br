@@ -13,43 +13,46 @@ function MenuBar() {
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
         {/* Elemento Home */}
-        <S.MenuBarLink
-          to="/"
-          title="Voltar para a home"
-          cover
-          direction="top"
-          bg="#1c1c1f"
-        >
-          <S.MenuBarItem>
+        <S.MenuBarItem>
+          <S.MenuBarLink
+            to="/"
+            activeClassName="active"
+            title="Voltar para a home"
+            cover
+            direction="top"
+            bg="#1c1c1f"
+          >
             <Home />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
+          </S.MenuBarLink>
+        </S.MenuBarItem>
 
         {/* Elemento ir para ir para pagina about */}
-        <S.MenuBarLink
-          to="/about"
-          title="Ir para o Topo"
-          cover
-          direction="top"
-          bg="#1c1c1f"
-        >
-          <S.MenuBarItem>
+        <S.MenuBarItem>
+          <S.MenuBarLink
+            to="/about"
+            title="Sobre min"
+            activeClassName="active"
+            cover
+            direction="top"
+            bg="#1c1c1f"
+          >
             <Me />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
+          </S.MenuBarLink>
+        </S.MenuBarItem>
 
         {/* Elemento pesquisar */}
-        <S.MenuBarLink
-          to="/search"
-          title="Pesquisar"
-          cover
-          direction="top"
-          bg="#1c1c1f"
-        >
-          <S.MenuBarItem>
+        <S.MenuBarItem>
+          <S.MenuBarLink
+            to="/search"
+            title="Pesquisar"
+            cover
+            activeClassName="active"
+            direction="top"
+            bg="#1c1c1f"
+          >
             <Search />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
+          </S.MenuBarLink>
+        </S.MenuBarItem>
 
         {/* Elemento ir para o top */}
         <S.MenuBarLink
