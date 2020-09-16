@@ -17,16 +17,16 @@ export const MenuLinksItem = styled.li`
   padding: 0.5rem 0;
 
   .active {
-    color: #1fa1f2;
+    color: var(--color-link-active);
   }
 `;
 
 export const MenuLinksLink = styled(AniLink)`
-  color: #8899a6;
+  color: var(--color-link-text);
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: #1fa1f2;
+    color: var(--color-link-active);
   }
 `;

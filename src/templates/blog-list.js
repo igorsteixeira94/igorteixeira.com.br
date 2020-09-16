@@ -19,6 +19,7 @@ function BlogList({ data, pageContext }) {
   return (
     <Layout>
       <SEO title="Home" />
+
       {postList.map(
         ({
           node: {
@@ -39,6 +40,7 @@ function BlogList({ data, pageContext }) {
           />
         )
       )}
+
       <Pagination
         isFirst={isFirst}
         isLast={isLast}

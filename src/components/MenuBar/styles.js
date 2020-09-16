@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const MenuBarWrapper = styled.aside`
   display: none;
   @media (max-width: 1000px) {
     align-items: center;
-    background: #192734;
+    background: var(--color-bcg-aside);
 
     display: flex;
 
     justify-content: space-between;
-    border-top: 1px solid #38444d;
+    border-top: 1px solid var(--color-borders);
     bottom: 0;
     flex-direction: row;
     height: auto;
@@ -23,19 +23,17 @@ export const MenuBarWrapper = styled.aside`
 
 export const MenuBarGroup = styled.div`
   display: flex;
-  flex-direction: column;
-
-  @media (max-width: 1000px) {
-    flex-direction: row;
-  }
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
 `;
 
-export const MenuBarLink = styled(Link)`
+export const MenuBarLink = styled(AniLink)`
   display: block;
 `;
 
 export const MenuBarItem = styled.span`
-  color: #8899a6;
+  color: var(--color-link-text);
   cursor: pointer;
   display: block;
   height: 3.75rem;
@@ -43,6 +41,6 @@ export const MenuBarItem = styled.span`
   position: relative;
   width: 3.75rem;
   &:hover {
-    color: #1fa1f2;
+    color: var(--color-link-active);
   }
 `;

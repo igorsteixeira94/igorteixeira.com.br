@@ -9,10 +9,10 @@ export const LayoutWrapper = styled.section`
 `;
 
 export const LayoutMain = styled.main`
-  background: #16202c;
+  background: var(--color-bcg-main);
   min-height: 100vh;
   width: 100%;
-  padding: 0 0 0 20rem;
+  padding: 2rem 0 0 22rem;
 
   @media (max-width: 1000px) {
     padding: 4.125rem 0 3rem 0;

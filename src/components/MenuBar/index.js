@@ -1,38 +1,72 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 
 import { Home } from '@styled-icons/boxicons-solid/Home';
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2';
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt';
-import { LightBulb as Light } from '@styled-icons/entypo/LightBulb';
-import { Grid } from '@styled-icons/boxicons-regular/Grid';
+import { AboutDotMe as Me } from '@styled-icons/simple-icons/AboutDotMe';
+import * as GA from './trackers';
 import * as S from './styles';
 
 function MenuBar() {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="Voltar para a home">
+        {/* Elemento Home */}
+        <S.MenuBarLink
+          to="/"
+          title="Voltar para a home"
+          cover
+          direction="top"
+          bg="#1c1c1f"
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search" title="Pesquisar">
+
+        {/* Elemento ir para ir para pagina about */}
+        <S.MenuBarLink
+          to="/about"
+          title="Ir para o Topo"
+          cover
+          direction="top"
+          bg="#1c1c1f"
+        >
+          <S.MenuBarItem>
+            <Me />
+          </S.MenuBarItem>
+        </S.MenuBarLink>
+
+        {/* Elemento pesquisar */}
+        <S.MenuBarLink
+          to="/search"
+          title="Pesquisar"
+          cover
+          direction="top"
+          bg="#1c1c1f"
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
         </S.MenuBarLink>
-      </S.MenuBarGroup>
 
-      <S.MenuBarGroup>
-        <S.MenuBarItem title="Mudar o tema">
-          <Light />
-        </S.MenuBarItem>
-        <S.MenuBarItem title="Mudar a visualização">
-          <Grid />
-        </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
-          <Arrow />
-        </S.MenuBarItem>
+        {/* Elemento ir para o top */}
+        <S.MenuBarLink
+          to="#"
+          title="Ir para o Topo"
+          cover
+          direction="top"
+          bg="#1c1c1f"
+          onClick={() => {
+            GA.topClickTrack();
+            window.scroll({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <S.MenuBarItem>
+            <Arrow />
+          </S.MenuBarItem>
+        </S.MenuBarLink>
       </S.MenuBarGroup>
     </S.MenuBarWrapper>
   );

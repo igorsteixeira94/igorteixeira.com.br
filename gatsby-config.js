@@ -3,10 +3,10 @@ const queries = require('./src/utils/algolia_queries');
 
 module.exports = {
   siteMetadata: {
-    title: `My blog`,
+    title: `Igor R. S. Teixeira`,
     position: `JavaScript Developer`,
-    description: `A blog about omnistack development and other cool stuff.`,
-    author: `Igor R.S. Teixeira`,
+    description: `Pra economizar papel criei esse blog ! Escrevo sobre programação e outra coisas.`,
+    author: `Igor R. S. Teixeira`,
     siteUrl: `https://igorsteixeira94.netlify.app/`,
   },
   plugins: [
@@ -78,7 +78,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SearchWrapper = styled.section`
-  background: #16202c;
+  background: var(--color-bcg-main);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -26,14 +26,14 @@ export const SearchWrapper = styled.section`
     }
   }
   .ais-Stats {
-    color: #8899a6;
+    color: var(--color-link-text);
     font-size: 0.8rem;
   }
   .ais-SearchBox-input {
     background: none;
     border: none;
-    border-bottom: 1px solid #38444d;
-    color: #8899a6;
+    border-bottom: 1px solid var(--color-borders);
+    color: var(--color-link-text);
     font-size: 1rem;
     padding: 0.2rem;
     width: 100%;

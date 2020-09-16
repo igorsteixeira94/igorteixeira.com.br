@@ -3,18 +3,18 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styled from 'styled-components';
 
 export const ProfileWrapper = styled.section`
-  color: #8899a6;
+  color: var(--color-link-text);
   display: flex;
   flex-direction: column;
 `;
 
 export const ProfileLink = styled(AniLink)`
-  color: #8899a6;
+  color: var(--color-link-text);
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: #1fa1f2;
+    color: var(--color-link-active);
   }
 
   @media (max-width: 1000px) {

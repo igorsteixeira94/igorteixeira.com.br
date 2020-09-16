@@ -12,7 +12,7 @@ function RecommendedPost({ next, previous }) {
           className="previous"
           cover
           direction="left"
-          bg="#16202c"
+          bg="#1c1c1f"
         >
           {previous.frontmatter.title}
         </S.RecommendedLink>
@@ -26,7 +26,7 @@ function RecommendedPost({ next, previous }) {
           className="next"
           cover
           direction="right"
-          bg="#16202c"
+          bg="#1c1c1f"
         >
           {next.frontmatter.title}
         </S.RecommendedLink>

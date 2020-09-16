@@ -1,15 +1,21 @@
+const handle = 'igorsteixeira94';
+
 const links = [
   {
     label: 'Github',
-    url: 'https://github.com',
+    url: `https://github.com/${handle}`,
   },
   {
-    label: 'Twitter',
-    url: 'https://twitter.com',
+    label: 'Linkedin',
+    url: `https://www.linkedin.com/in/${handle}`,
   },
   {
     label: 'Instagram',
-    url: 'https://Instagram.com',
+    url: `https://instagram.com/${handle}`,
+  },
+  {
+    label: 'Whatsapp',
+    url: `https://api.whatsapp.com/send?phone=5566999045725&text=Ol%C3%A1%20Igor%20!%20Tudo%20bem%20%3F%20Vi%20seu%20blog%20e%20por%20isso%20quero%20entrar%20em%20contato`,
   },
 ];
 

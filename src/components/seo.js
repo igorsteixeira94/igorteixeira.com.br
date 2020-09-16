@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, title, image }) {
   const url = site.siteMetadata.siteUrl;
   const ogImage = image
     ? `${url}/assets/img/${image}`
-    : `${url}/assets/img/cover.png`;
+    : `${url}/assets/img/cover.jpg`;
   return (
     <Helmet
       htmlAttributes={{

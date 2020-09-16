@@ -16,7 +16,7 @@ function Pagination({
   return (
     <S.PaginationWrapper>
       {!isFirst && (
-        <AniLink to={prevPage} cover direction="left" bg="#16202c">
+        <AniLink to={prevPage} cover direction="left" bg="#1c1c1f">
           {' '}
           &#8678; página anterior
         </AniLink>
@@ -26,7 +26,7 @@ function Pagination({
       </p>
 
       {!isLast && (
-        <AniLink to={nextPage} cover direction="right" bg="#16202c">
+        <AniLink to={nextPage} cover direction="right" bg="#1c1c1f">
           {' '}
           proxima página &#8680;
         </AniLink>
