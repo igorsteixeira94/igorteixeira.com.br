@@ -8,7 +8,9 @@ function AboutPage() {
   return (
     <Layout>
       <SEO title="About" />
-      <h1>About</h1>
+      <h1 style={{ textAlign: 'center', color: '#fff', fontSize: 48 }}>
+        Sobre mim em construção
+      </h1>
     </Layout>
   );
 }
