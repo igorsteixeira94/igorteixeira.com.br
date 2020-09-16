@@ -7,7 +7,7 @@ module.exports = {
     position: `JavaScript Developer`,
     description: `Pra economizar papel criei esse blog ! Escrevo sobre programação e outra coisas.`,
     author: `Igor R. S. Teixeira`,
-    siteUrl: `https://igorsteixeira94.netlify.app/`,
+    siteUrl: `https://www.igorteixeira.com.br/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -75,8 +75,8 @@ module.exports = {
         name: `Igor Rodrigues da Silva Teixeira`,
         short_name: `Igor Teixeira`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#25262a`,
+        theme_color: `#25262a`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

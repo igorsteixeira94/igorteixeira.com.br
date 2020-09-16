@@ -19,10 +19,8 @@ function BlogList({ data, pageContext }) {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1 style={{ textAlign: 'center', color: '#fff', fontSize: 48 }}>
-        Home em construção
-      </h1>
-      {/* postList.map(
+
+      {postList.map(
         ({
           node: {
             frontmatter: { background, category, date, description, title },
@@ -41,8 +39,8 @@ function BlogList({ data, pageContext }) {
             key={slug}
           />
         )
-        ) */}
-      {/** 
+      )}
+
       <Pagination
         isFirst={isFirst}
         isLast={isLast}
@@ -50,7 +48,7 @@ function BlogList({ data, pageContext }) {
         numPages={numPages}
         prevPage={prevPage}
         nextPage={nextPage}
-      /> */}
+      />
     </Layout>
   );
 }
