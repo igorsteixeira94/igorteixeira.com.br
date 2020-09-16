@@ -2,7 +2,7 @@ backend:
   name: github
   repo: igorsteixeira94/igorteixeira.com.br
   branch: master 
-  site_domain: https://www.igorteixeira.com.br/
+  site_domain: igorsteixeira94.netlify.app
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
@@ -19,6 +19,6 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Background", name: "background", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", format:'YYYY-MM-DD hh:mm:ss'}
+      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-MM-DD hh:mm:ss'}
       - {label: "image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
