@@ -11,6 +11,15 @@ export default createGlobalStyle`
 
 
   }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height:6px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var( --color-bcg-aside); 
+    height:6px;
+}
   *{
     margin:0;
     padding:0;
