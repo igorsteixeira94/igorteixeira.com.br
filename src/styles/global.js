@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+ 
   :root{
     --color-link-active: #23be53;
-    --color-link-text: #cccccc;
+    --color-link-text: #fff;
     --color-borders: #2d2e32;
     --color-bcg-main:#1c1c1f;
     --color-bcg-aside:#25262a;
@@ -24,6 +25,10 @@ export default createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
+  }
+
+  html,body,#___gatsby{
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   ul{

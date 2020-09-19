@@ -25,6 +25,7 @@ export const MenuLinksLink = styled(AniLink)`
   color: var(--color-link-text);
   text-decoration: none;
   transition: color 0.5s;
+  font-weight: 400;
 
   &:hover {
     color: var(--color-link-active);

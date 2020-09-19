@@ -18,6 +18,7 @@ const postsQuery = ` {
           slug
         }
         excerpt(pruneLength:5000)
+        timeToRead
       }
     }
   }

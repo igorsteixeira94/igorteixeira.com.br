@@ -22,7 +22,7 @@ function Pagination({
         </AniLink>
       )}
       <p>
-        {currentPage} de {numPages} paginas
+        {currentPage} de {numPages} páginas
       </p>
 
       {!isLast && (

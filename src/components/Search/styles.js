@@ -28,6 +28,7 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     color: var(--color-link-text);
     font-size: 0.8rem;
+    margin-bottom: 4px;
   }
   .ais-SearchBox-input {
     background: none;

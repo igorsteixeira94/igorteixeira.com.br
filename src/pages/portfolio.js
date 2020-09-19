@@ -11,7 +11,7 @@ const Portfolio = () => (
       description="Conheça um pouco mais sobre as tecnologias e ferramentas que utilizo."
     />
     <S.MainContent>
-      <h1>Calma que ainda estou contruindo essa página !</h1>
+      <h1>Calma que ainda estou construindo essa página!</h1>
     </S.MainContent>
   </Layout>
 );

@@ -6,10 +6,12 @@ export const PaginationWrapper = styled.section`
   display: flex;
   padding: 1.5rem 3rem;
   justify-content: space-between;
+
   a {
     color: var(--color-link-text);
     text-decoration: none;
     transition: color 0.5s;
+
     &:hover {
       color: var(--color-link-active);
     }
