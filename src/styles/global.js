@@ -14,13 +14,18 @@ export default createGlobalStyle`
   }
   ::-webkit-scrollbar {
     width: 12px;
-    height:6px;
+    height:8px;
 }
   
 ::-webkit-scrollbar-thumb {
     background: var( --color-bcg-aside); 
-    height:6px;
+    height:8px;
 }
+  pre{
+    ::-webkit-scrollbar-thumb {
+    background: #e3e3e3; 
+    }
+  }
   *{
     margin:0;
     padding:0;

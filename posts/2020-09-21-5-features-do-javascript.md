@@ -1,21 +1,25 @@
 ---
 title: 5 features do JavaScript
-description: Minhas 5 features preferidas do JavaScript
+description: Minhas features preferidas do JavaScript
 category: JS
 background: "#eed604"
 date: 2020-09-20 11:45:29
 thumbnail: /assets/img/js.jpg
 ---
-# Minhas 5 features preferidas do JavaScript
 
 ![JavaScript](/assets/img/js.jpg)
 
 Todo o ano o ECMASCRIPT lança especificações novas para linguagem JavaScript, já estamos na edição ES11 ou ES2020 e a cada especificação a linguagem fica muito mais produtiva e consistente. Separei 5 features que mais uso no dia-a-dia.
 
-<ol>
-	<li><a href="#operador-exponencial">Operador Exponencial</li>
-</ol>
 
+- [Optional Chaining](#optional-chaining)
+- [Operador Exponencial](#operador-exponencial)
+- [Template Literal](#template-literal)
+- [Desestruturação](#desestruturacao)
+- [Spread e Rest](#spread-rest)
+
+
+<a id="optional-chaining"></a>
 ## Optional Chaining
 
 Imagine que você tem um objeto que veio da sua api no formato JSON. E temos nosso componente App para renderizar esse cliente, com todas as suas informações:
@@ -80,7 +84,8 @@ E se existir somente a rua ? E se tiver somente o bairro ? Teríamos que verific
 
 O resultado é um código menos verboso, realmente uma feature muito poderosa para nosso dia-a-dia ! 
 
-<h2 id="#operador-exponencial"> Operador Exponencial</h2>
+<a id="operador-exponencial"></a>
+## Operador Exponencial
 
 Essa pode parecer besteira, mas as únicas maneiras de  fazer exponenciação no JavaScript era através da Math.pow ou usando uma função recursiva ! Agora com o operador exponencial `**`, tudo fica mais simples:
 
@@ -98,7 +103,7 @@ let valor = 5;
 valor **=2; 
 // ele pega o valor que já existe na variavél e aplica o expoente 2.
 ```
-
+<a id="template-literal"></a>
 ## Template Literal
 
 Quem já programou em C sabe como é complicado " dá um print" com textos, variáveis ou operações aritméticas. Com o template literal do JavaScript tudo fica muito mais simples, essa eu uso em todo o projeto ! 
@@ -118,7 +123,7 @@ console.log(`Meu nome é ${nome}, tenho ${idade} anos.`);
 
 console.log(`Em 2030 eu terei ${idade + 10} anos`);
 ```
-
+<a id="desestruturacao"></a>
 ## Desestruturação
 
 Essa aqui eu sou apaixonado ! A desestruturação basicamente nos permite extrair dados de arrays ou objetos em variáveis distintas. Vamos ao exemplo: 
@@ -198,6 +203,7 @@ const [{nome:[,sobrenome]}] = usuarios; // -> log sobrenome: 'Rodrigues'
 
 Podemos desestruturar retornos de função e muito mais. Com as melhorias nos objetos, podemos criar uma chave a partir de uma string ai a desestruturação fica muito mais divertida !
 
+<a id="spread-rest"></a>
 ## Spread e Rest
 
 Para fechar com chave de ouro ! Já que falei de desestruturação, não poderia deixar de mencionar esses dois operadores. Eles seguem a mesma notação `...nome`, mas possuem funcionalidades específicas. 

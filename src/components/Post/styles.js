@@ -4,7 +4,7 @@ export const PostHeader = styled.header`
   color: #fff;
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
+  padding: 1rem 5rem 0;
 
   @media (max-width: 1000px) {
     padding: 3rem 0 0;
@@ -13,7 +13,7 @@ export const PostHeader = styled.header`
 `;
 
 export const PostTitle = styled.h1`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
@@ -26,7 +26,7 @@ export const PostTitle = styled.h1`
 `;
 
 export const PostDescription = styled.h2`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   padding: 0 1.4rem;
 
@@ -125,6 +125,7 @@ export const MainContent = styled.section`
     border-left: 0.3rem solid var(--color-link-active);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
+    font-style: italic;
   }
   hr {
     border: 1px solid var(--color-borders);
@@ -174,8 +175,11 @@ export const MainContent = styled.section`
   .gatsby-resp-image-background-image {
     z-index: 2;
     opacity: 1 !important;
+    border-radius: 8px;
+    margin-bottom: 1rem;
   }
   .gatsby-resp-image-image {
+    border-radius: 8px;
     box-shadow: none !important;
     transition: opacity 0.2s;
     &.lazyload {
@@ -188,6 +192,10 @@ export const MainContent = styled.section`
   }
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
+    border-radius: 6px;
+    pre {
+      border-radius: 6px;
+    }
     @media (max-width: 1000px) {
       padding: 1rem;
     }
@@ -206,5 +214,8 @@ export const MainContent = styled.section`
     &:hover {
       opacity: 0.8;
     }
+  }
+  p {
+    text-align: justify;
   }
 `;
