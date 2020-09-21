@@ -1,8 +1,8 @@
 ---
 title: 5 features do JavaScript
 description: Minhas features preferidas do JavaScript
-category: JS
-background: "#eed604"
+category: js
+background: "#ffbe0b"
 date: 2020-09-20 11:45:29
 thumbnail: /assets/img/js.jpg
 ---
