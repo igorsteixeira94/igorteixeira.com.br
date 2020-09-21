@@ -12,11 +12,9 @@ thumbnail: /assets/img/js.jpg
 
 Todo o ano o ECMASCRIPT lança especificações novas para linguagem JavaScript, já estamos na edição ES11 ou ES2020 e a cada especificação a linguagem fica muito mais produtiva e consistente. Separei 5 features que mais uso no dia-a-dia.
 
-1. [Optional Chaining](#optional-chaining)
-2. [Operador Exponencial](#operador-exponencial)
-3. [Template Literal](#template-literal)
-4. [Desestruturação](#desestruturação)
-5. [Spred e Rest](#spread-e-rest)
+<ol>
+	<li><a href="#operador-exponencial">Operador Exponencial</li>
+</ol>
 
 ## Optional Chaining
 
