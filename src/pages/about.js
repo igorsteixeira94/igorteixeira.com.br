@@ -14,7 +14,7 @@ function AboutPage() {
         description="Aqui conto um pouco de como conheci a programação e o que estou aprendendo"
       />
       <S.MainContent>
-        <h1>Sobre mim</h1>
+        <h1 style={{ margin: 0 }}>Sobre mim</h1>
 
         <p>
           Meu nome Igor Rodrigues da Silva Teixeira, nasci em Barreiras/Ba. Sou
@@ -82,6 +82,7 @@ function AboutPage() {
           Se perdeu todo esse tempo lendo sobre mim, entre em contato através de
           qualquer uma das minhas redes sociais.
         </p>
+        <SocialLinks className="socialLinkAbout" />
       </S.MainContent>
     </Layout>
   );

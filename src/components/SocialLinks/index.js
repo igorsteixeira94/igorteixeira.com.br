@@ -3,9 +3,9 @@ import * as S from './styles';
 import Icons from './icons';
 import links from './content';
 
-function SocialLinks() {
+function SocialLinks({ ...rest }) {
   return (
-    <S.SocialLinksWrapper>
+    <S.SocialLinksWrapper {...rest}>
       <S.SocialLinksList>
         {links.map((link, i) => {
           const Icon = Icons[link.label];

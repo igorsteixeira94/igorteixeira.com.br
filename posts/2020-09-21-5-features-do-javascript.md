@@ -4,7 +4,7 @@ description: Minhas features preferidas do JavaScript
 category: JS
 background: "#eed604"
 date: 2020-09-20 11:45:29
-thumbnail: /assets/img/js.jpg
+image: /assets/img/js.jpg
 ---
 
 ![JavaScript](/assets/img/js.jpg)

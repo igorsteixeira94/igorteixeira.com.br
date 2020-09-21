@@ -7,6 +7,7 @@ import SideBar from '../SideBar';
 import MenuBar from '../MenuBar';
 
 const Layout = ({ children }) => {
+  console.log('CURIOSO 😂️😂️😂️😂️');
   return (
     <S.LayoutWrapper>
       <GlobalStyles />

@@ -218,4 +218,23 @@ export const MainContent = styled.section`
   p {
     text-align: justify;
   }
+
+  /*Social Links About*/
+  .socialLinkAbout {
+    @media (max-width: 1000px) {
+      display: block !important;
+    }
+    @media (min-width: 1001px) {
+      display: none;
+    }
+    ul {
+      list-style: none;
+    }
+
+    svg {
+      &:hover {
+        color: var(--color-link-active);
+      }
+    }
+  }
 `;

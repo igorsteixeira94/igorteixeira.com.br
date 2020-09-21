@@ -36,6 +36,11 @@ export default createGlobalStyle`
     font-family: 'Noto Sans JP', sans-serif;
   }
 
+  body{
+    -webkit-font-smoothing:antialiased;
+
+  }
+
   ul{
     list-style:none;
     cursor:pointer;

@@ -72,8 +72,8 @@ exports.createPages = ({ graphql, actions }) => {
         component: path.resolve('./src/templates/blog-post.js'),
         context: {
           slug: node.fields.slug,
-          previousPost: previous,
-          nextPost: next,
+          previousPost: next,
+          nextPost: previous,
         },
       });
     });

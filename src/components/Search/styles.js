@@ -20,6 +20,7 @@ export const SearchWrapper = styled.section`
     }
   }
   .ais-SearchBox {
+    margin: 16px 0px;
     padding-top: 2rem;
     @media (max-width: 1000px) {
       padding-top: 1rem;
@@ -28,7 +29,11 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     color: var(--color-link-text);
     font-size: 0.8rem;
-    margin-bottom: 4px;
+    margin-bottom: 16px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 8px;
+    }
   }
   .ais-SearchBox-input {
     background: none;

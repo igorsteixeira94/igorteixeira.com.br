@@ -17,8 +17,28 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "Background", name: "background", widget: "string"}
+      - {
+        label: 'Category',
+        name: 'category',
+        widget: 'select',
+        options: ['js', 'react', 'reactnative', 'nodejs', 'dev', 'git', 'github','docker'],
+      }
+      - {
+        label: 'Background',
+        name: 'background',
+        widget: 'select',
+        options:
+          [
+            { label: 'JS', value: '#ffbe0b' },
+            { label: 'React', value: '#47d7ff' },
+            { label: 'ReactNative', value: '#04a5cf' },
+            { label: 'Nodejs', value: '#7ec729' },
+            { label: 'dev', value: '#7159c1' },
+            { label: 'git', value: '#ea5f46' },
+            { label: 'github', value: '#161415' },
+            { label: 'docker', value: '#129fdb' },
+          ],
+      }
       - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-MM-DD hh:mm:ss'}
-      - {label: "image", name: "thumbnail", widget: "image"}
+      - {label: "image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}

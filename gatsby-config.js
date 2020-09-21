@@ -72,8 +72,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Igor Rodrigues da Silva Teixeira`,
-        short_name: `Igor Teixeira`,
+        name: `Igor Rodrigues`,
+        short_name: `Igor Rodrigues`,
         start_url: `/`,
         background_color: `#25262a`,
         theme_color: `#25262a`,
