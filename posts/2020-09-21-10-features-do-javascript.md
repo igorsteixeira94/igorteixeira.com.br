@@ -82,7 +82,7 @@ E se existir somente a rua ? E se tiver somente o bairro ? Teríamos que verific
 
 O resultado é um código menos verboso, realmente uma feature muito poderosa para nosso dia-a-dia ! 
 
-## Operador Exponencial
+<h2 id="#operador-exponencial"> Operador Exponencial</h2>
 
 Essa pode parecer besteira, mas as únicas maneiras de  fazer exponenciação no JavaScript era através da Math.pow ou usando uma função recursiva ! Agora com o operador exponencial `**`, tudo fica mais simples:
 
