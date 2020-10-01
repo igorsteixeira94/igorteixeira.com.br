@@ -2,7 +2,7 @@ backend:
   name: github
   repo: igorsteixeira94/igorteixeira.com.br
   branch: master 
-  site_domain: igorsteixeira94.netlify.app
+  site_domain: igorteixeira.com.br
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
