@@ -6,19 +6,17 @@ export const SideBarWrapper = styled.aside`
   align-items: center;
   text-align: center;
 
-  border: 2px solid var(--color-borders);
-  border-radius: 14px;
+  border-right: 2px solid var(--color-borders);
 
   background: var(--color-bcg-aside);
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.5);
 
-  height: 90vh;
+  height: 100vh;
   position: fixed;
 
-  padding: 2rem;
+  padding: 2rem 1rem;
 
-  width: 20rem;
-  margin: 2rem;
+  width: 17.8rem;
 
   @media (max-width: 1000px) {
     align-items: center;
@@ -30,7 +28,7 @@ export const SideBarWrapper = styled.aside`
     height: auto;
     padding: 1rem 2rem;
     width: 100%;
-    border-right: 2px solid var(--color-borders);
+    border-bottom: 2px solid var(--color-borders);
     border-radius: 0;
     z-index: 9999;
 

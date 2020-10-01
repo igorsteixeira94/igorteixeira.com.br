@@ -72,12 +72,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Igor Rodrigues`,
-        short_name: `Igor Rodrigues`,
+        name: `Igor Teixeira`,
+        short_name: `IgorRST`,
         start_url: `/`,
         background_color: `#25262a`,
         theme_color: `#25262a`,
-        display: `minimal-ui`,
+        display: `standalone`,
+        scope: `/`,
+        lang: 'pt-BR',
+        orientation: 'any',
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },

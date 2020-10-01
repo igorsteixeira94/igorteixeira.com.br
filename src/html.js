@@ -11,10 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;700&display=swap"
-          rel="stylesheet"
-        />
+        <meta name="theme-color" content="#1c1c1f" />
         <meta
           name="google-site-verification"
           content="PpsZcGUgpqhKkVs2X17PIp9FOpzKI22rdNKqG1EyT_k"
