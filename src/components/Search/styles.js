@@ -15,14 +15,14 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.125rem 2rem;
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       padding: 0.5rem 1rem;
     }
   }
   .ais-SearchBox {
     margin: 16px 0px;
     padding-top: 2rem;
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       padding-top: 1rem;
     }
   }
@@ -31,7 +31,7 @@ export const SearchWrapper = styled.section`
     font-size: 0.8rem;
     margin-bottom: 16px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       margin-bottom: 8px;
     }
   }

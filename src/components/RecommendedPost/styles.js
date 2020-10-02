@@ -20,7 +20,7 @@ export const RecommendedLink = styled(AniLink)`
   text-decoration: none;
   transition: background 0.5s;
   width: 50%;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     line-height: 1.3;
     font-size: 0.9rem;
   }
@@ -53,7 +53,7 @@ export const RecommendedEmpty = styled.div`
   transition: background 0.5s;
   width: 50%;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     line-height: 1.3;
     font-size: 0.9rem;
   }

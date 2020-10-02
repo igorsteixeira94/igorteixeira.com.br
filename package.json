@@ -29,6 +29,7 @@
     "lazysizes": "^5.2.2",
     "netlify-cms-app": "^2.12.22",
     "netlify-plugin-gatsby-cache": "^0.3.2",
+    "polished": "^3.6.7",
     "prismjs": "^1.21.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

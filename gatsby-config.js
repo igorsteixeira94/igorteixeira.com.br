@@ -3,10 +3,10 @@ const queries = require('./src/utils/algolia_queries');
 
 module.exports = {
   siteMetadata: {
-    title: `Igor R. S. Teixeira`,
-    position: `JavaScript Developer`,
-    description: `Pra economizar papel criei esse blog ! Escrevo sobre programação e outra coisas.`,
-    author: `Igor R. S. Teixeira`,
+    title: `Igor Rodrigues`,
+    position: `Desenvolvedor Full Stack`,
+    description: `Seja bem-vindo! Escrevo sobre programação e outra coisas.`,
+    author: `Igor Rodrigues`,
     siteUrl: `https://www.igorteixeira.com.br/`,
   },
   plugins: [

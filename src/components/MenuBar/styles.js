@@ -3,7 +3,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const MenuBarWrapper = styled.aside`
   display: none;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     align-items: center;
     background: var(--color-bcg-aside);
 
@@ -40,8 +40,8 @@ export const MenuBarItem = styled.span`
   color: var(--color-link-text);
   cursor: pointer;
   display: block;
-  height: 3.75rem;
-  padding: 1.1rem;
+  height: 2.5rem;
+  padding: 0.5rem 1.2rem;
   position: relative;
   width: 3.75rem;
 

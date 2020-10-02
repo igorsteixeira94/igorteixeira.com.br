@@ -34,7 +34,7 @@ export default createGlobalStyle`
   }
 
   html,body,#___gatsby{
-    font-family:  sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   body{

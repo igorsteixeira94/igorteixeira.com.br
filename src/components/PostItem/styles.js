@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { darken, lighten } from 'polished';
 
 export const PostItemLink = styled(AniLink)`
   color: var(--color-link-text);
@@ -26,14 +27,14 @@ export const PostItemWrapper = styled.section`
   padding: 1.5rem 1rem;
 
   transition: all 0.2s;
-  margin: 0rem 1rem 0.8rem;
+  margin: 0rem 0rem 0.8rem;
 
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.5);
 
   &:hover {
     margin-left: 2rem;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     margin: 1.6rem 2.4rem 0.8rem;
 
     align-items: flex-start;
@@ -43,10 +44,10 @@ export const PostItemWrapper = styled.section`
 `;
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${(props) => props.background};
-  color: #fff;
+  border: 1px solid ${(props) => darken(0.3, props.background)};
+  color: ${(props) => lighten(0.09, props.background)};
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   justify-content: center;
   min-height: 90px;
@@ -60,7 +61,7 @@ export const PostItemTag = styled.div`
   margin-bottom: 0.7rem;
   margin-left: 1.5rem;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     margin-left: 0rem;
     font-size: 1rem;
   }
@@ -69,7 +70,7 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     margin: 0;
   }
 `;

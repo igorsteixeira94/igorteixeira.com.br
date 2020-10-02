@@ -16,7 +16,7 @@ export const PaginationWrapper = styled.section`
       color: var(--color-link-active);
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     font-size: 0.8rem;
     padding: 1rem;
   }

@@ -8,7 +8,7 @@ export const MenuLinksList = styled.ul`
   font-size: 1.2rem;
   font-weight: 300;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;

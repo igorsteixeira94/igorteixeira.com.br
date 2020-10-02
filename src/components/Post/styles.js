@@ -6,6 +6,9 @@ export const PostHeader = styled.header`
   max-width: 70rem;
   padding: 1rem 5rem 0;
 
+  @media (max-width: 1200px) {
+    padding-top: 3rem;
+  }
   @media (max-width: 1000px) {
     padding: 3rem 0 0;
     max-width: 100%;
@@ -221,10 +224,10 @@ export const MainContent = styled.section`
 
   /*Social Links About*/
   .socialLinkAbout {
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       display: block !important;
     }
-    @media (min-width: 1001px) {
+    @media (min-width: 1200px) {
       display: none;
     }
     ul {

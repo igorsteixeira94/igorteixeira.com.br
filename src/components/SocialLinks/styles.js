@@ -4,7 +4,7 @@ export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
   width: 100%;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;

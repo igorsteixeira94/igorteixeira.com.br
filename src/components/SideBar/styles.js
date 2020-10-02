@@ -18,7 +18,7 @@ export const SideBarWrapper = styled.aside`
 
   width: 17.8rem;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     align-items: center;
     border-top: 0;
     border-left: 0;
