@@ -1,5 +1,5 @@
 ---
-title: Criando um Portal com React
+title: Usando createPortal do React
 description: Criando um head para social media usando createPortal.
 category: react
 background: "#47d7ff"
