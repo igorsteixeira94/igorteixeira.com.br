@@ -6,7 +6,7 @@ background: "#47d7ff"
 date: 2020-09-22 09:53:23
 image: /assets/img/portal.jpg
 ---
-![Imagem do jogo Portal](blob:https://igorteixeira.com.br/f402c40a-4e61-43f4-985b-79ba02799776)
+![Imagem do jogo portal](/assets/img/portal.jpg)
 
 ## Introdução
 
