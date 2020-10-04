@@ -15,8 +15,8 @@ Todo o ano o ECMASCRIPT lança especificações novas para linguagem JavaScript,
 - [Optional Chaining](#optional-chaining)
 - [Operador Exponencial](#operador-exponencial)
 - [Template Literal](#template-literal)
-- [Desestruturação](#desestruturacao)
-- [Spread e Rest](#spread-rest)
+- [Desestruturação](#desestruturação)
+- [Spread e Rest](#spread-e-rest)
 
 
 <a id="optional-chaining"></a>
@@ -71,7 +71,7 @@ cliente.endereco &&
 /*Continuação do código*/
 ```
 
-E se existir somente a rua ? E se tiver somente o bairro ? Teríamos que verificar propriedade por propriedade antes de renderizar. Teríamos um código muito verboso, agora veremos a solução com o operador optional chaining `?.` 
+E se existir somente a rua? E se tiver somente o bairro? Teríamos que verificar propriedade por propriedade antes de renderizar. Teríamos um código muito verboso, agora veremos a solução com o operador optional chaining `?.` 
 
 ```javascript
 // ***
@@ -82,12 +82,12 @@ E se existir somente a rua ? E se tiver somente o bairro ? Teríamos que verific
 /*Continuação do código*/
 ```
 
-O resultado é um código menos verboso, realmente uma feature muito poderosa para nosso dia-a-dia ! 
+O resultado é um código menos verboso, realmente uma feature muito poderosa para nosso dia-a-dia! 
 
 <a id="operador-exponencial"></a>
 ## Operador Exponencial
 
-Essa pode parecer besteira, mas as únicas maneiras de  fazer exponenciação no JavaScript era através da Math.pow ou usando uma função recursiva ! Agora com o operador exponencial `**`, tudo fica mais simples:
+Essa pode parecer besteira, mas as únicas maneiras de fazer exponenciação no JavaScript era através da Math.pow ou usando uma função recursiva! Agora com o operador exponencial `**`, tudo fica mais simples:
 
 ```javascript
 // ---- Vamos calcular 5² => 5 * 5 = 25
@@ -106,9 +106,9 @@ valor **=2;
 <a id="template-literal"></a>
 ## Template Literal
 
-Quem já programou em C sabe como é complicado " dá um print" com textos, variáveis ou operações aritméticas. Com o template literal do JavaScript tudo fica muito mais simples, essa eu uso em todo o projeto ! 
+Quem já programou em C sabe como é complicado "dá um print" com textos, variáveis ou operações aritméticas. Com o template literal do JavaScript tudo fica muito mais simples, essa eu uso em todo o projeto! 
 
-Também é usada pelo GraphQL e Styled Components eles usam uma variação do template literal (Tagged Template Strings). 
+Também é usada pelo GraphQL e Styled Components, eles usam uma variação do template literal (Tagged Template Strings). 
 
 ```javascript
 const nome = 'Igor Rodrigues';
@@ -126,7 +126,7 @@ console.log(`Em 2030 eu terei ${idade + 10} anos`);
 <a id="desestruturacao"></a>
 ## Desestruturação
 
-Essa aqui eu sou apaixonado ! A desestruturação basicamente nos permite extrair dados de arrays ou objetos em variáveis distintas. Vamos ao exemplo: 
+Essa aqui eu sou apaixonado! A desestruturação basicamente nos permite extrair dados de arrays ou objetos em variáveis distintas. Vamos ao exemplo: 
 
 ```javascript
 //Temos o objeto abaixo e precisamos do login do usuário que é o email.
@@ -150,7 +150,7 @@ console.log(email); //ReferenceError: email is not defined
 console.log(login); //joaozinhoquebracodigo@mail.com
 ```
 
-Agora vamos usar a desestruturação em arrays ! 
+Agora vamos usar a desestruturação em arrays! 
 
 ```javascript
 const nomes = ['Joao', 'Maria', 'Carlos', 'Leticia', 'Ana'];
@@ -167,7 +167,7 @@ const [,,,nome] = nomes; //log -> Leticia.
 //É só utilizamos a virgula para pular elementos!! 
 ```
 
-E pode misturar array com objeto e objeto com array ? Olha só 
+E pode misturar array com objeto e objeto com array? Olha só. 
 
 ```javascript
 //Temos o seguinte array de usuarios e quero pegar a senha do segundo !
@@ -201,14 +201,14 @@ const [{nome}] = usuarios; //-> log nome : ['Igor','Rodrigues']
 const [{nome:[,sobrenome]}] = usuarios; // -> log sobrenome: 'Rodrigues'
 ```
 
-Podemos desestruturar retornos de função e muito mais. Com as melhorias nos objetos, podemos criar uma chave a partir de uma string ai a desestruturação fica muito mais divertida !
+Podemos desestruturar retornos de função e muito mais. Com as melhorias nos objetos, podemos criar uma chave a partir de uma string ai a desestruturação fica muito mais divertida!
 
 <a id="spread-rest"></a>
 ## Spread e Rest
 
-Para fechar com chave de ouro ! Já que falei de desestruturação, não poderia deixar de mencionar esses dois operadores. Eles seguem a mesma notação `...nome`, mas possuem funcionalidades específicas. 
+Para fechar com chave de ouro! Já que falei de desestruturação, não poderia deixar de mencionar esses dois operadores. Eles seguem a mesma notação `...nome`, mas possuem funcionalidades específicas. 
 
-Rest basicamente nos permite comprimir um conjunto de dados em um array. Confuso ? Vamos de exemplo:
+Rest basicamente nos permite comprimir um conjunto de dados em um array. Confuso? Vamos de exemplo:
 
 ```javascript
 //Imagine que você deu uma festa e quer separar os contatinhos ! 
@@ -257,6 +257,6 @@ const novaLista = [lista,6,7,8,9,10];
 console.log(novaLista); // [ [ 1, 2, 3, 4, 5 ], 6, 7, 8, 9, 10 ]
 ```
 
-Essas são as features que mais uso e gosto no JavaScript ! Existem features mais poderosas como Arrow Functions, Async/Await, manipuladores de Iterador e Iterável, Dynamic Import, manipulação de promises entre outras. Mas isso é assunto para os próximos artigos ! 
+Essas são as features que mais uso e gosto no JavaScript! Existem features mais poderosas como Arrow Functions, Async/Await, manipuladores de Iterador e Iterável, Dynamic Import, manipulação de promises entre outras. Mas, isso é assunto para os próximos artigos! 
 
-A ideia aqui foi mostrar soluções simples que podem elevar nossa produtividade no dia-a-dia ! Abraço.
+A ideia aqui foi mostrar soluções simples que podem elevar nossa produtividade no dia-a-dia! Abraço.
