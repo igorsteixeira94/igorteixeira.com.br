@@ -6,6 +6,8 @@ background: "#7ec729"
 date: 2020-10-04 11:28:50
 image: /assets/img/ilya-pavlov-oqtafyt5ktw-unsplash.jpg
 ---
+![computer](/assets/img/ilya-pavlov-oqtafyt5ktw-unsplash.jpg)
+
 ## Introdução
 
 Quando comecei a estudar desenvolvimento web sempre que pesquisava sobre a arquitetura Rest, um cara chamado SOAP aparecia nas pesquisas. Então hoje resolvi escrever um pouco sobre ele.
@@ -17,8 +19,6 @@ Quando comecei a estudar desenvolvimento web sempre que pesquisava sobre a arqui
 * Envelope:  É o elemento raiz do xml, contém os argumentos e meta-informações que são enviadas/recebidas durante a comunicação;
 * Header: Guarda as especificações para processar a mensagem (informações de autenticação, roteamento, ...);
 * Body: É o elemento principal, ele contém a informação a ser transportada.
-
-![Estrutura do SOAP](/assets/img/soap.svg)
 
 SOAP geralmente utiliza o protocolo HTPP ou RPC. Um exemplo de comunicação SOAP através do protocolo HTTP:
 
