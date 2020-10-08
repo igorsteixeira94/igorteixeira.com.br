@@ -10,11 +10,11 @@ image: /assets/img/capa.jpg
 
 ## Introdução
 
-Semanas atrás foram descobertos pacotes no npm que coletavam ip, geolocalização, modelo de CPU, dentre outras informações. Já foram excluídos, mas me levou a uma reflexão: "Tenho que aprender mais e ir além do *npm install*! Bora lá!
+Algumas semanas atrás foram descobertos pacotes no npm que coletavam ip, geolocalização, modelo de CPU, dentre outras informações. Já foram excluídos, mas me levou a uma reflexão: "Tenho que aprender mais e ir além do *npm install*! Bora lá!
 
 ## Package.json
 
-Vamos primeiro conhecer esse arquivo, até porque ele vai ser responsável por gerencias nossas dependências. 
+Vamos primeiro conhecer esse arquivo, até porque ele vai ser responsável por gerenciar nossas dependências. 
 
 O arquivo package.json é um arquivo que contém os metadados sobre o projeto, informações sobre nossas dependências (dependencies e devDependencies) e os script que realizam alguma ação no nosso projeto (rodar um teste, realizar um lint, buildar o código). Ele não é criado manualmente, é resultado do comando init. Vamos criar um novo projeto com `npm init -y`.  *A tag -y é para atribuir valores padrões para os metadados.* Ele tem o seguinte aspecto:
 
@@ -42,11 +42,11 @@ Aqui vamos focar apenas nas dependências. Qual a diferença entre dependencies 
 
 ## Instalando pacotes
 
-Um pacote/dependência é um biblioteca de terceiros, ou seja, um trecho de código reutilizável que faz uma determina tarefa e que pode ser adicionada ao nosso projeto. Ganhamos com isso, produtividade, um código de maior qualidade e não nos preocupamos com manutenção. Antes de instalar um pacote é importante ter alguns cuidados:
+Um pacote/dependência é um biblioteca de terceiros, ou seja, um trecho de código reutilizável que faz uma determinada tarefa e que pode ser adicionada ao nosso projeto. Ganhamos com isso, produtividade, um código de maior qualidade e não nos preocupamos com manutenção. Antes de instalar um pacote é importante ter alguns cuidados:
 
 * Verifique o tipo de licença: Algumas dependências não permitem a utilização em projetos para venda;
 * Verifique se a equipe daquela dependência oferece uma manutenção constante;
-* Verifique nos sites de registros globais (npm e yarn) as informações sobre aquela dependência. Observe que uma dependência pode ''depender' de muitas outras. Sempre bom ficar ligado. 
+* Verifique nos sites de registros globais (npm e yarn) as informações sobre aquela dependência. Observe que uma dependência pode 'depender' de muitas outras. Sempre bom ficar ligado. 
 
 Comando para instalação um pacote
 
@@ -104,7 +104,7 @@ yarn list v1.22.5
 
 ## Listando
 
-Podemos utilizar o yarn/npm list para listar os pacotes. O problema é que ele vai listar todos os pacotes, cada pacote instalado terá instalado também suas dependências. Com isso temos uma árvore de dependências, se temos uma árvore podemos imprimir de acordo com a profundidade usando a flag --depth<profundidade>. Vamos ver:
+Podemos utilizar o npm list para listar os pacotes. O problema é que ele vai listar todos os pacotes, cada pacote instalado terá que instalar também suas dependências. Com isso temos uma árvore de dependências, se temos uma árvore podemos imprimir de acordo com a profundidade usando a flag --depth<profundidade>. Vamos ver:
 
 ```shell
 //A profundidade 0 são os pacotes que instalamos diretamente.
@@ -121,7 +121,7 @@ npm list --depth=0
   ├── node-addon-api@3.0.2
   └── node-pre-gyp@0.15.0
 
-//Na profundidade 2 temos todos os pacotes já vistos até agora e os pacotes que node-addon-api e node-pre-gyn dependem. E assim por diante, nas demais profundidades.
+//Na profundidade 2 temos todos os pacotes já vistos até agora e os pacotes que node-addon-api e node-pre-gyn dependem. E assim por diante nas demais profundidades.
 
 //Se você quiser buscar por um pacote especifico, pode usar o comando grep. No exemplo listo os possíveis pacotes que iniciam com o nome safe:
 npm list | grep safe
@@ -143,11 +143,11 @@ Para excluir aquelas dependências que não usamos mais, temos duas opções:
 
 ## Atualizando
 
-Os pacotes utilizam o controle de versão semântico, é um controle de versão utilizado por jogos, empresas e desenvolvedores. Existem três tipos de versão, e esses tipos definem as abordagem que podemos utilizar no momento de atualizar nossos pacotes. 
+Os pacotes utilizam o controle de versão semântico, é um controle de versão utilizado por jogos, empresas e desenvolvedores. Existem três tipos de versão, e esses tipos definem as abordagem que podemos utilizar no momento de atualização/instalação dos nossos pacotes. 
 
 Um pacote é escrito no package.json no seguinte formato:  "pacote": "1.0.0". Agora vamos para as versões:
 
-* Versão principal: É o número mais a esquerda, uma alteração nesse número indica que o pacote passou por alterações e talvez seja necessário reescrever parte do código. Ex.: O pacote date-fns atualizou e mudou o nome de uma função que formata a data, onde tem essa função no meu projeto sou obrigado a reescrever meu código. (*Agora imagine um projeto com alto acoplamento, reescrever código pode ser uma furada.*)
+* Versão principal: É o número mais a esquerda, uma alteração nesse número indica que o pacote passou por alterações e talvez seja necessário reescrever parte do código. Ex.: O pacote date-fns atualizou e mudou o nome de uma função que formata a data, onde existe essa função no meu projeto sou obrigado a reescrever meu código. (*Agora imagine um projeto com alto acoplamento, reescrever código pode ser uma furada.*)
 * Versão secundária: É o número do meio, ele indica que foram adicionados novos recursos no pacote, geralmente deve ser seguro realizar essas atualizações.
 * Versão de patch: É o número mais a direita, ele indica que foram corrigidos bugs, geralmente também é seguro realizar essas atualizações.
 
@@ -188,8 +188,8 @@ bcrypt     3.0.8   3.0.8   5.0.0  ExerciseBlog
 ```
 
 * Current : É a versão instalada em nosso projeto.
-* Wanted: É a ultima versão semântica do pacote, note que instalei usando ~ (versão de patch)
-* Lastest: Ultima versão disponível.
+* Wanted: É a última versão semântica do pacote, note que instalei usando ~ (versão de patch)
+* Lastest: Última versão disponível.
 
 ## Corrigindo problemas
 
@@ -211,7 +211,7 @@ O comando `npm audit fix` tenta corrigir o problema. Ele atualiza para uma vers�
 
 ## Ferramenta npx
 
-Para tratar problemas com dependências instaladas globalmente, o npx permite carregar uma dependência, executar um comando e apos execução realiza a limpeza (remover do sistema). Pode ser usada para rodar comandos de devDependencies em ambiente de produção, como por exemplo: Gerar as migrations.
+Para tratar problemas com dependências instaladas globalmente, o npx permite carregar uma dependência, executar um comando e após execução realiza a limpeza (remover do sistema). Pode ser usada para rodar comandos de devDependencies em ambiente de produção, como por exemplo: Gerar as migrations.
 
 ## Package-lock.json
 
