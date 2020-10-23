@@ -4,7 +4,7 @@ description: Iniciando o aprendizado em TypeScript
 category: dev
 background: "#7159c1"
 date: 2020-10-23 09:56:54
-image: /assets/img/ilya-pavlov-oqtafyt5ktw-unsplash.jpg
+image: /assets/img/blake-connally-b3l0g6hlxr8-unsplash.jpg
 ---
 * [Introdução](#introducao)
 * [Tipagem](#tipagem)
