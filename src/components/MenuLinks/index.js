@@ -13,7 +13,7 @@ function MenuLinks() {
               activeClassName="active"
               cover
               direction="right"
-              bg="#1c1c1f"
+              bg="#202833"
             >
               {link.label}
             </S.MenuLinksLink>

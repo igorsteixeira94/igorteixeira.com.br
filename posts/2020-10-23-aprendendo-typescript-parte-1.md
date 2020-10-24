@@ -403,4 +403,5 @@ renderPlatform('Windows'); // Retorna Windows
 ## Conclusão
 
 Hoje conhecemos um pouco sobre tipagem, os tipos de dados, o que são interfaces e types aliases, além de entender que nem tudo precisar ser tipado e muitas coisas a própria linguagem realiza a tipagem usando inferência. A [documentação](https://www.typescriptlang.org/docs/handbook/intro.html) é muito rica em detalhes.
+
 Próximo post sobre TypeScript vamos entrar no paradigma de orientação a objetos.

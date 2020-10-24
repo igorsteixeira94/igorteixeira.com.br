@@ -20,7 +20,7 @@ function MenuBar() {
             title="Voltar para a home"
             cover
             direction="top"
-            bg="#1c1c1f"
+            bg="#202833"
           >
             <Home />
           </S.MenuBarLink>
@@ -34,7 +34,7 @@ function MenuBar() {
             activeClassName="active"
             cover
             direction="top"
-            bg="#1c1c1f"
+            bg="#202833"
           >
             <Me />
           </S.MenuBarLink>
@@ -48,7 +48,7 @@ function MenuBar() {
             cover
             activeClassName="active"
             direction="top"
-            bg="#1c1c1f"
+            bg="#202833"
           >
             <Search />
           </S.MenuBarLink>
@@ -60,7 +60,7 @@ function MenuBar() {
           title="Ir para o Topo"
           cover
           direction="top"
-          bg="#1c1c1f"
+          bg="#202833"
           onClick={() => {
             GA.topClickTrack();
             window.scroll({ top: 0, behavior: 'smooth' });

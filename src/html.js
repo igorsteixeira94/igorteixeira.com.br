@@ -16,6 +16,10 @@ export default function HTML(props) {
           name="google-site-verification"
           content="PpsZcGUgpqhKkVs2X17PIp9FOpzKI22rdNKqG1EyT_k"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

@@ -6,11 +6,9 @@ export default createGlobalStyle`
   :root{
     --color-link-active: #23be53;
     --color-link-text: #fff;
-    --color-borders: #2d2e32;
-    --color-bcg-main:#1c1c1f;
-    --color-bcg-aside:#25262a;
-
-
+    --color-borders: #303e52;
+    --color-bcg-main:#202833;
+    --color-bcg-aside:#293342;
 
   }
   ::-webkit-scrollbar {
@@ -34,7 +32,7 @@ export default createGlobalStyle`
   }
 
   html,body,#___gatsby{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   body{

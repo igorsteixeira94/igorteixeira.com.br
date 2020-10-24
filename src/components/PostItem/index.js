@@ -13,7 +13,7 @@ function PostItem({
   description,
 }) {
   return (
-    <S.PostItemLink to={slug} cover direction="right" bg="#1c1c1f">
+    <S.PostItemLink to={slug} cover direction="right" bg="#202833">
       <S.PostItemWrapper>
         <S.PostItemTag background={background}>{category}</S.PostItemTag>
         <S.PostItemInfo>
