@@ -10,6 +10,9 @@ image: /assets/img/blake-connally-b3l0g6hlxr8-unsplash.jpg
 * [Tipagem](#tipagem)
 * [Instalação](#instalação)
 * [Tipos básicos](#tipos-básicos)
+* [Interfaces](#interfaces)
+* [Type Aliases](#type-aliases)
+* [Conclusão](#conclusão)
 
 
 
@@ -273,12 +276,12 @@ let cart: object = {
 
 ### Type Assertions
 
-*Uma maneira de afirmarmos o tipo de uma variável! Usaremos bastante nas Interfaces.*
+*Uma maneira de afirmarmos o tipo de uma variável!*
 
 ~~~typescript
 let someValue: unknown = "Isso é uma string";
 //Lembra que antes o tipo unknown não tinha acesso as propriedades?
-//Agora estou afirmando para o TypeScript que aquela variavel é uma string.
+//Agora estou afirmando para o TypeScript que aquela variável é uma string.
 let lengthSomeValue:number = (someValue as string).length; 
 
 //Podemos usar a notação com <>
@@ -287,4 +290,123 @@ let lengthSomeValue:number = (<string>someValue).length;
 
 ------
 
-> Agora relaxa! Você não precisa sair desesperado em tipar tudo. Utilize apenas quando for necessário. O TypeScript também possui Type Inference, ou seja, tipagem por inferência. 
+> Agora relaxa! Você não precisa sair desesperado tipando tudo. Utilize apenas quando for necessário e outra o TypeScript também possui Type Inference, ou seja, tipagem por inferência. 
+>
+> Vale notar que a inferência de tipos primitivos não funciona em variáveis declaradas com const.
+
+## Interfaces
+
+Acima, aprendemos a criar uma variável do tipo `object`! Mas será que podemos descrever de maneira mais eficiente um objeto? É justamente aqui que entra as interfaces, elas nos permitem descrever a estrutura de um objeto. !  Vamos ao código!
+
+~~~typescript
+//Maneira simples de se usar interfaces.
+interface User {
+  username: string;
+  password: number;
+};
+
+const login: User = {
+  username:'igorsteixeira94',
+  password:123456
+};
+~~~
+
+### Estender Interfaces
+
+*Interfaces podem estender outras interfaces!*
+
+~~~typescript
+interface User {
+  username: string;
+  password: number;
+};
+
+interface Person extends User{
+  name: string;
+  age: number;
+  address?: string; //Propriedade opcional! (?) 
+
+};
+
+const person1: Person = {
+  name: 'Igor Rodrigues',
+  age:26,
+  username:'igorsteixeira94',
+  password:123456
+};
+~~~
+
+Também podemos implementar as interfaces nas classes, isso é tão maneiro que vou fazer um post separado só para o paradigma de orientação a objetos com TypeScript.
+
+------
+
+## Type Aliases
+
+Um cara muito parecido com as interfaces são os type aliases! Podemos aqui criar um novo nome para um tipo, mas além disso podemos nomear variáveis primitivas, uniões, tuplas e quaisquer outros tipos. Bora ver.
+
+~~~typescript
+type User = {
+  username: string;
+  password: number;
+};
+
+const login: User = {
+  username:'igorsteixeira94',
+  password:123456
+};
+~~~
+
+### Estender Types
+
+*Também podemos estender os types aliases*
+
+~~~typescript
+type User = {
+  username: string;
+  password: number;
+};
+
+type Person = {
+  name: string;
+  age: number;
+  address?: string;
+
+} & User; //Realizar uma Intersection de Types!
+
+const person: Person = {
+  name: 'Igor Rodrigues',
+  age:26,
+  username:'igorsteixeira94',
+  password:123456
+}
+~~~
+
+### O que torna ele único
+
+*Como eu falei, diferente das interfaces podemos manipular os tipos primitivos.*
+
+~~~typescript
+type nsid = number | string; //crei um tipo chamado nsid que pode ser um number ou string;
+
+function getUser( id: nsid){}
+function getCustomer( id: nsid){}
+~~~
+
+*Um último exemplo, conhecido como tipos literais. Podemos criar tipos literais de number, string e boolean.*
+
+~~~typescript
+type Platform = 'Windows' | 'Linux' | 'MacOS';
+
+function renderPlatform(platform: Platform) {
+  return platform;
+}
+
+renderPlatform('ios'); // Retorna erro!
+renderPlatform('Windows'); // Retorna Windows
+~~~
+
+------
+
+## Conclusão
+
+Hoje conhecemos um pouco sobre tipagem, os tipos de dados, o que são interfaces e types aliases, além de entender que nem tudo precisar ser tipado e muitas coisas a própria linguagem realiza a tipagem usando inferência.  Próximo post sobre TypeScript vamos entrar no paradigma de orientação a objetos.
