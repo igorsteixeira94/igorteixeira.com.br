@@ -20,15 +20,15 @@ image: /assets/img/blake-connally-b3l0g6hlxr8-unsplash.jpg
 
 ## Introdução
 
-Apesar de usar typescript diversas vezes, hoje separei um tempo para aprende um pouco mais sobre ele. Segundo o [site oficial](https://www.typescriptlang.org/) ele é uma linguagem de código aberto, compilada, construída em cima do JavaScript adicionando definições de tipagem estática. 
+Apesar de usar Typescript diversas vezes, hoje separei um tempo para aprender um pouco mais sobre ele. Segundo o [site oficial](https://www.typescriptlang.org/), ele é uma linguagem de código aberto, compilada, construída em cima do JavaScript com a adição de definições de tipagem estática. 
 
-Muita gente tem preconceito com tipagem estática, eu particularmente gosto muito! Mas, sou suspeito para falar programei bastante em Java, C++ e C. 
+Muita gente tem preconceito com tipagem estática, eu particularmente gosto muito! Mas, sou suspeito para falar, já programei bastante em Java, C++ e C. 
 
 ## Tipagem
 
-Quando estudamos uma linguagem de programação é importante conhecer seus tipos e paradigmas. Aqui vou tratar apenas sobre a classificação com respeito a tipagem, para entendermos o que é tipagem dinâmica, estática, forte ou fraca.
+Quando estudamos uma linguagem de programação é importante conhecer suas tipagens e paradigmas. Aqui vamos ver um pouco sobre tipagem para entendermos o que é uma tipagem dinâmica, estática, forte e fraca.
 
-* Tipagem forte: São linguagem que não aceitam conversões automaticamente. Como o python por exemplo:
+* Tipagem forte: Linguagens desse tipo não aceitam conversões automaticamente. Como o python por exemplo:
 
   ```python
   nome = "Igor Rodrigues"
@@ -40,7 +40,7 @@ Quando estudamos uma linguagem de programação é importante conhecer seus tipo
 
   print(nome +""+ str(idade)) 
   ```
-* Tipagem fraca: São linguagem que aceitam conversões automaticamente, conversão ocorre de maneira implícita. Como o nosso Typescript:
+* Tipagem fraca: Aceitam conversões automaticamente, conversão ocorre de maneira implícita. Como o nosso Typescript:
 
   ```typescript
   let nome :string;
@@ -51,10 +51,10 @@ Quando estudamos uma linguagem de programação é importante conhecer seus tipo
 
   console.log(nome +""+ idade);
 
-  //Melhor ainda usando template literals
+  //Melhor ainda usando template strings
   console.log(`${nome} ${idade}`);
   ```
-* Tipagem estática: São linguagem que no momento da declaração da variável, devemos declarar o seu tipo e esse tipo não pode ser alterado.
+* Tipagem estática: Em uma linguagem no momento da declaração da variável, devemos declarar o seu tipo e esse tipo não pode ser alterado.
 
   ```typescript
   let nome: string; 
@@ -66,7 +66,7 @@ Quando estudamos uma linguagem de programação é importante conhecer seus tipo
   //Se tentarmos atribuir um valor que não seja do tipo declarado
   nome = 26; //Type 'number' is not assignable to type 'string'.
   ```
-* Tipagem dinâmica: São linguagem que não necessitam da declaração do tipo da variável, a propria linguagem faz a escolha durante o tempo de execução. *Alocação de espaço de memória dessas linguagens são muito interessantes de se estudar!*
+* Tipagem dinâmica: Necessita da declaração do tipo da variável, a própria linguagem faz a 'escolha' durante o tempo de execução.
 
   ```javascript
   let nome = "Igor Rodrigues";
@@ -82,23 +82,23 @@ Quando estudamos uma linguagem de programação é importante conhecer seus tipo
 
 - - -
 
-Bom, agora que sabemos um pouco sobre tipagem, TypeScript é uma linguagem de tipagem estática e fracamente tipada. Vamos lá!
+Bom, agora que sabemos um pouco sobre tipagem, podemos classificar o TypeScript como uma linguagem de tipagem estática e fracamente tipada!
 
 ## Instalação
 
-Bom, para começar precisamos do [Node](https://nodejs.org/en/) instalado! Para instalar o [TypeScript](https://www.typescriptlang.org/download):
+Bom, para começar precisamos do [Node](https://nodejs.org/en/) instalado! Depois, para instalar o [TypeScript](https://www.typescriptlang.org/download):
 
 ```shell
 npm install typescript --save-dev
 ```
 
-Após instalação, é necessário configurar o arquivo  tsconfig.json, para criar o arquivo:
+Após instalação, é 'necessário' configurar o arquivo  tsconfig.json. Para criar o arquivo:
 
 ```shell
 tsc --init
 ```
 
-A única mudança que fiz, foi adicionar uma pasta para os arquivos compilados.
+A única mudança que fiz, foi adicionar um caminho para os arquivos compilados. Fique a vontade para realizar suas modificações.
 
 ```json
 {
@@ -106,7 +106,7 @@ A única mudança que fiz, foi adicionar uma pasta para os arquivos compilados.
 }
 ```
 
-Também gosto de usar o [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)! Assim, fico mais eficiente quando estou em ambiente de desenvolvimento.
+Também gosto de usar o [ts-node-dev](https://www.npmjs.com/package/ts-node-dev) no ambiente de desenvolvimento! 
 
 [Meu repositório](https://github.com/igorsteixeira94/learnts) com estudos desse blog!
 
@@ -179,7 +179,7 @@ enum Color{
   Blue
 }
 let c: Color = Color.Green;
-console.log(c) // 0
+console.log(c) // 1
 
 enum Color{
   Red = 21,
@@ -192,7 +192,7 @@ console.log(c) // 22
 
 ### Unknown
 
-*Quando não soubermos o valor de uma variável, ou queremos aceitar intencionalmente todos os valores.*
+*Quando não soubermos o valor de uma variável ou quisermos aceitar intencionalmente todos os valores.*
 
 ```typescript
 let notSure: unknown = 4;
@@ -217,7 +217,7 @@ console.log(typeof(notSure)); //boolean
 
 ### Any
 
-*Esse tipo é perigo! Pois, você indica para o typescript ignorar totalmente o tipo daquela variável. Diferente do unknown, aqui podemos acessar qualquer propriedade de maneira arbitraria e não receberemos erro em TEMPO DE EXECUÇÃO.*
+*Esse tipo é perigo! Pois, você indica para o Typescript que ignore totalmente o tipo daquela variável. Diferente do unknown, aqui podemos acessar qualquer propriedade de maneira arbitraria e não receberemos erro em TEMPO DE EXECUÇÃO.*
 
 ```typescript
 let anyType:any = 4;
@@ -229,7 +229,7 @@ unknownType.toFixed(); //Error, Objeto do tipo unknown
 
 ### Void
 
-\*Temos também que 'tipar' o retorno das nossas funções, e quando não retorna nada? Será do tipo void.
+\*Temos também que 'tipar' o retorno das nossas funções. E quando não retorna nada? Será do tipo void.
 
 ```typescript
 function print():void{
@@ -248,7 +248,7 @@ let m:null = null;
 
 ### Never
 
-*Também é um sub-tipo, é comumente utilizado quando a função não retorna nada, ou lança uma exceção. Seu critério é que não pode ter um ponto final alcançável.*
+*Também é um sub-tipo, é comumente utilizado quando a função não retorna nada, ou lança uma exceção. Seu critério é que não pode ter um ponto final alcançável na função.*
 
 ```typescript
 function print():never{
@@ -289,7 +289,7 @@ let lengthSomeValue:number = (<string>someValue).length;
 
 ## Interfaces
 
-Acima, aprendemos a criar uma variável do tipo `object`! Mas será que podemos descrever de maneira mais eficiente um objeto? É justamente aqui que entra as interfaces, elas nos permitem descrever a estrutura de um objeto. !  Vamos ao código!
+Acima, aprendemos a criar uma variável do tipo `object`! Mas, será que podemos descrever de maneira mais eficiente um objeto? É justamente aqui que entra as interfaces, elas nos permite descrever a estrutura de um objeto! Vamos ao código!
 
 ```typescript
 //Maneira simples de se usar interfaces.
@@ -335,7 +335,7 @@ Também podemos implementar as interfaces nas classes, isso é tão maneiro que 
 
 ## Type Aliases
 
-Um cara muito parecido com as interfaces são os type aliases! Podemos aqui criar um novo nome para um tipo, mas além disso podemos nomear variáveis primitivas, uniões, tuplas e quaisquer outros tipos. Bora ver.
+Um cara muito parecido com as interfaces são os type aliases! Aqui podemos nomear variáveis primitivas, uniões, tuplas e quaisquer outros tipos.
 
 ```typescript
 type User = {
@@ -344,8 +344,8 @@ type User = {
 };
 
 const login: User = {
-  username:'igorsteixeira94',
-  password:123456
+  username: 'igorsteixeira94',
+  password: 123456
 };
 ```
 
@@ -402,4 +402,5 @@ renderPlatform('Windows'); // Retorna Windows
 
 ## Conclusão
 
-Hoje conhecemos um pouco sobre tipagem, os tipos de dados, o que são interfaces e types aliases, além de entender que nem tudo precisar ser tipado e muitas coisas a própria linguagem realiza a tipagem usando inferência.  Próximo post sobre TypeScript vamos entrar no paradigma de orientação a objetos.
+Hoje conhecemos um pouco sobre tipagem, os tipos de dados, o que são interfaces e types aliases, além de entender que nem tudo precisar ser tipado e muitas coisas a própria linguagem realiza a tipagem usando inferência. A [documentação](https://www.typescriptlang.org/docs/handbook/intro.html) é muito rica em detalhes.
+Próximo post sobre TypeScript vamos entrar no paradigma de orientação a objetos.
