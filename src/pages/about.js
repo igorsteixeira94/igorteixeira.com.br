@@ -48,6 +48,36 @@ function AboutPage() {
             <br /> <small>Paulo Freire</small>
           </p>
         </blockquote>
+        <h3>O que faço atualmente?</h3>
+        <p>
+          Primeiramente, estudando e lendo bastante sobre padrões de projeto,
+          typescript e react native. Também leio sobre hábitos, desenvolvimento
+          pessoal, finanças e HQs.
+        </p>
+        <p>
+          Atualmente, trabalho como desenvolvedor Full Stack na{' '}
+          <a
+            href="https://hitcode.com.br/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Hitcode
+          </a>
+          .
+        </p>
+        <p>
+          Sou sócio e desenvolvedor na{' '}
+          <a
+            href="https://vinculo.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Vínculo.app
+          </a>
+          . Uma startup social que por meio de uma plataforma online desenvolve
+          as habilidades e comportamentos de quem pensa e aprende diferente.
+        </p>
+
         <h3>Por fim </h3>
         <p>
           Sou um cara extremamente bem humorado, adoro conversar e aprender com
